@@ -5,8 +5,6 @@ format: html
 editor: visual
 ---
 
-Element Pts Criteria Plan.1. Admin 0.5 App Title and the names and course of the group members Plan.2. Topic and Data 1.0 Context of the problem to be analyzed using the Shiny app Plan.2. Topic and Data 1.5 Status and key takeaways from the Literature Review (at least three sources) Plan.2. Topic and Data 1.5 Proposed data sources with links and general description of dates, number of variables, and number of observations for each source. Plan.3. Use Case 1.0 Use Case and Actor Description Plan.3. Use Case 1.0 Actor Questions of Interest Plan.3. Use Case 1.0 Anticipated Workflow for the Actor Plan.4. Ethical Review 2.0 Discuss ethics review across the life cycle and against a specific professional organization’s code of conduct/guidelines Plan.5. App Concept 1.5 General Layout of the App to support the Actor workflow Plan.5. App Concept 1.0 Planned options for user data selection and manipulation (if any) Plan.5. App Concept 2.0 Planned options for user exploratory numerical/graphical analysis Plan.5. App Concept 2.0 Planned options for user statistical models and tests Plan.6. Collaboration 1.0 Names and Responsibilities for the group members Plan.6. Collaboration 1.0 Approach to Team workflow: collaboration and branching Plan.6. Collaboration 1.0 Schedule: Dates for Major Phases and Milestones, e.g., Gathering of Data, Data Preparation, Milestones for developing the App, Code Cutoff, Producing the Vignette Plan.7. Readability 1.0 Appropriate formatting with minimal spelling/ grammar errors.
-
 # App Title:
 
 The project we propose it looking at the general global education statistics to see how globally education varies in both who participates, but also the skills which individuals have.
