@@ -43,21 +43,21 @@ primary_completion_rate <- read_xlsx("../Data/Completion_rate_2022_formatted.xls
          "Country" = `...2`,
          "SubRegion" = `...3`,
          "Development" = `...5`,
-         "Total Completion" = `...6` 
+         "Total_Completion" = `...6` 
 ) |> clean_names()
 LowerSecondary_completion_rate <- read_xlsx("../Data/Completion_rate_2022_formatted.xlsx", sheet= "Lower secondary", skip = 1) |>
   rename( "ISO" = `...1`,
          "Country" = `...2`,
          "SubRegion" = `...3`,
          "Development" = `...5`,
-         "Total Completion" = `...6` 
+         "Total_Completion" = `...6` 
 ) |> clean_names()
 UpperSecondary_completion_rate <- read_xlsx("../Data/Completion_rate_2022_formatted.xlsx", sheet= "Upper secondary", skip = 1) |>
   rename( "ISO" = `...1`,
          "Country" = `...2`,
          "SubRegion" = `...3`,
          "Development" = `...5`,
-         "Total Completion" = `...6` 
+         "Total_Completion" = `...6` 
 ) |> clean_names()
 ```
 
@@ -125,5 +125,72 @@ adult_literacy <- read_xlsx("../Data/ICT-Skills_2022.xlsx", , sheet= "adult lite
 ```
 
 # Dataset on Out of Schools
+```{r}
+primary_OutSchool_rate <- read_xlsx("../Data/Out_of_school_rate_2022_formatted.xlsx", sheet= "Primary", skip = 1) |>
+  rename( "ISO" = `...1`,
+         "Country" = `...2`,
+         "Region" = `...3`,
+         "Development" = `...5`,
+         "Total_NotInSchool" = `...6` 
+)
+LowerSecondary_OutSchool_rate <- read_xlsx("../Data/Out_of_school_rate_2022_formatted.xlsx", sheet= "Lower Secondary", skip = 1) |>
+  rename( "ISO" = `...1`,
+         "Country" = `...2`,
+         "Region" = `...3`,
+         "Development" = `...5`,
+         "Total_NotInSchool" = `...6` 
+)
+UpperSecondary_OutSchool_rate <- read_xlsx("../Data/Out_of_school_rate_2022_formatted.xlsx", sheet= "Upper Secondary", skip = 1) |>
+  rename( "ISO" = `...1`,
+         "Country" = `...2`,
+         "Region" = `...3`,
+         "Development" = `...5`,
+         "Total_NotInSchool" = `...6` 
+)
+```
 
 # Dataset on Digital Connectivity
+```{r}
+total_schoolage_digital_connect <-read_xlsx("../Data/School-Age-Digital-Connectivity.xlsx", sheet= "Total School Age", skip = 1) |>
+  rename( "ISO" = `...1`,
+         "Country/Area" = `...2`,
+         "Region" = `...3`,
+         "Subregion" = `...4`,
+         "IncomeGroup" = `...5`,
+         "Total_DC" = `...6` 
+)
+
+pre_primary_digital_connect <-read_xlsx("../Data/School-Age-Digital-Connectivity.xlsx", sheet= "Pre-primary", skip = 1) |>
+  rename( "ISO" = `...1`,
+         "Country/Area" = `...2`,
+         "Region" = `...3`,
+         "Subregion" = `...4`,
+         "IncomeGroup" = `...5`,
+         "Total_DC" = `...6` 
+)
+primary_digital_connect <-read_xlsx("../Data/School-Age-Digital-Connectivity.xlsx", sheet= "Primary", skip = 1) |>
+  rename( "ISO" = `...1`,
+         "Country/Area" = `...2`,
+         "Region" = `...3`,
+         "Subregion" = `...4`,
+         "IncomeGroup" = `...5`,
+         "Total_DC" = `...6` 
+)
+lower_secondary_digital_connect <-read_xlsx("../Data/School-Age-Digital-Connectivity.xlsx", sheet= "Lower Secondary", skip = 1) |>
+  rename( "ISO" = `...1`,
+         "Country/Area" = `...2`,
+         "Region" = `...3`,
+         "Subregion" = `...4`,
+         "IncomeGroup" = `...5`,
+         "Total_DC" = `...6` 
+)
+upper_secondary_digital_connect <-read_xlsx("../Data/School-Age-Digital-Connectivity.xlsx", sheet= "Upper Secondary", skip = 1) |>
+  rename( "ISO" = `...1`,
+         "Country/Area" = `...2`,
+         "Region" = `...3`,
+         "Subregion" = `...4`,
+         "IncomeGroup" = `...5`,
+         "Total_DC" = `...6` 
+)
+```
+
