@@ -50,5 +50,30 @@ Dataset of interest (select) -> select countries or global regions -> stop and u
 ##Ethical Review
 
 
+# App Concept
+We anticipate making it so the user can use a single multiple choice select to chose their data of interest, but then a multiselect to chose their countries or regions of interest after a binary selection. Then we will allow them to check based on the variables in the dataset to choose which columns they would like to include.
+
+If only two countries are chosen, then we plan for the the actor to perform an unpaired t.test between countries, but if more than one country/region is selected, then an anova will be used for statistical test options.
+
+For plots, we plan to offer boxplots and scatterplots to represent the outcomes for our actors.
 
 
+## Responsibilties
+Katie: 
+- Merging from pull requests during a fork-pull method
+- Data Prep
+Kat: 
+- 
+
+# Workflow
+We plan to communicate via texting for easy communication where both of us are most likely to see a message! We plan to use the fork and pull method, where Katie will be responsible for merging the files together. We plan to be available to assist the other in our plans, and use our initials during making branches to make sure we can reference our old work more readily just in case we want to name things or know when someone made a change and explain the use.
+
+# Planned Schedule:
+Data collected: Completed 3/30
+Project Plan: Completed 4/1
+Data Preparation: 4/3
+Graph Making Function: 4/8
+Stats Test Function: 4/10
+Shiny App - selecting dataset/variables: 4/15
+Shiny App - apply graph and stats function: 4/19
+Testing and Vignette: 4/21
