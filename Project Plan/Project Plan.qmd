@@ -5,76 +5,61 @@ format: html
 editor: visual
 ---
 
-Element	Pts	Criteria
-Plan.1. Admin	0.5	App Title and the names and course of the group members
-Plan.2. Topic and Data	1.0	Context of the problem to be analyzed using the Shiny app
-Plan.2. Topic and Data	1.5	Status and key takeaways from the Literature Review (at least three sources)
-Plan.2. Topic and Data	1.5	Proposed data sources with links and general description of dates, number of variables, and number of observations for each source.
-Plan.3. Use Case	1.0	Use Case and Actor Description
-Plan.3. Use Case	1.0	Actor Questions of Interest
-Plan.3. Use Case	1.0	Anticipated Workflow for the Actor
-Plan.4. Ethical Review	2.0	Discuss ethics review across the life cycle and against a specific professional organization’s code of conduct/guidelines
-Plan.5. App Concept	1.5	General Layout of the App to support the Actor workflow
-Plan.5. App Concept	1.0	Planned options for user data selection and manipulation (if any)
-Plan.5. App Concept	2.0	Planned options for user exploratory numerical/graphical analysis
-Plan.5. App Concept	2.0	Planned options for user statistical models and tests
-Plan.6. Collaboration	1.0	Names and Responsibilities for the group members
-Plan.6. Collaboration	1.0	Approach to Team workflow: collaboration and branching
-Plan.6. Collaboration	1.0	Schedule: Dates for Major Phases and Milestones, e.g., Gathering of Data, Data Preparation, Milestones for developing the App, Code Cutoff, Producing the Vignette
-Plan.7. Readability	1.0	Appropriate formatting with minimal spelling/ grammar errors.
+Element Pts Criteria Plan.1. Admin 0.5 App Title and the names and course of the group members Plan.2. Topic and Data 1.0 Context of the problem to be analyzed using the Shiny app Plan.2. Topic and Data 1.5 Status and key takeaways from the Literature Review (at least three sources) Plan.2. Topic and Data 1.5 Proposed data sources with links and general description of dates, number of variables, and number of observations for each source. Plan.3. Use Case 1.0 Use Case and Actor Description Plan.3. Use Case 1.0 Actor Questions of Interest Plan.3. Use Case 1.0 Anticipated Workflow for the Actor Plan.4. Ethical Review 2.0 Discuss ethics review across the life cycle and against a specific professional organization’s code of conduct/guidelines Plan.5. App Concept 1.5 General Layout of the App to support the Actor workflow Plan.5. App Concept 1.0 Planned options for user data selection and manipulation (if any) Plan.5. App Concept 2.0 Planned options for user exploratory numerical/graphical analysis Plan.5. App Concept 2.0 Planned options for user statistical models and tests Plan.6. Collaboration 1.0 Names and Responsibilities for the group members Plan.6. Collaboration 1.0 Approach to Team workflow: collaboration and branching Plan.6. Collaboration 1.0 Schedule: Dates for Major Phases and Milestones, e.g., Gathering of Data, Data Preparation, Milestones for developing the App, Code Cutoff, Producing the Vignette Plan.7. Readability 1.0 Appropriate formatting with minimal spelling/ grammar errors.
 
-# App Title: 
+# App Title:
 
 The project we propose it looking at the general global education statistics to see how globally education varies in both who participates, but also the skills which individuals have.
 
 ## Lit REVIEW
 
+#Proposed Data: The data we propose to use come from ![UNICEF](%22https://data.unicef.org/topic/education/overview/#data%22) which is made of 7 separate data sets: out of school rates, adjusted net attendance rates, completion rates, foundational learning skills, information communication technology skills, youth and adult literacy rates, and school age digital connectivity. Within these tables, we can compare by country, region of the world, developmental status, across various education levels, giving percentages of the key topic along with gender, population density as a factor, and by wealth distribution across each stage in education path (primary, secondary) with occasionally looking at pre-primary and adult outcomes. The data also represents a variety of years, which can be filtered to look at an individual country's change over time or how they compare at certain time points.
 
-#Proposed Data:
-The data we propose to use come from ![UNICEF]("https://data.unicef.org/topic/education/overview/#data") which is made of 7 separate data sets: out of school rates, adjusted net attendance rates, completion rates, foundational learning skills, information communication technology skills, youth and adult literacy rates, and school age digital connectivity. Within these tables, we can compare by country, region of the world, developmental status, across various education levels, giving percentages of the key topic along with gender, population density as a factor, and by wealth distribution across each stage in education path (primary, secondary) with occasionally looking at pre-primary and adult outcomes. The data also represents a variety of years, which can be filtered to look at an individual country's change over time or how they compare at certain time points.
+It appears that each sheet has \~100 countries listed, each with approximately \~15 variables, across 3 sheets in 7 excel files.
 
-It appears that each sheet has ~100 countries listed, each with approximately ~15 variables, across 3 sheets in 7 excel files.
-
-#Actor Description: 
-Individuals who have an interest in comparing the educational outcomes from different countries to determine where global humanitarian foundations should target their services to improve education for all people of the world.
+#Actor Description: Individuals who have an interest in comparing the educational outcomes from different countries to determine where global humanitarian foundations should target their services to improve education for all people of the world.
 
 # Actor Questions of Interest:
-- Comparing literacy by country - adult vs children
-- Comparing computer skills by country by wealth quintile
-- Comparing by country the proportion of students not in school (by development, gender, schooling level, wealth quintile)
-- Comparison of reading and numericy skills between two different age groups by country (by development, gender, schooling level, wealth quintile as well)
+
+-   Comparing literacy by country - adult vs children
+-   Comparing computer skills by country by wealth quintile
+-   Comparing by country the proportion of students not in school (by development, gender, schooling level, wealth quintile)
+-   Comparison of reading and numericy skills between two different age groups by country (by development, gender, schooling level, wealth quintile as well)
 
 # Anticipated Actor Workflow:
-Dataset of interest (select) -> select countries or global regions -> stop and use that level variables or select sub variables (gender, region, wealth, etc) -> create plots/stats tests
+
+Dataset of interest (select) -\> select countries or global regions -\> stop and use that level variables or select sub variables (gender, region, wealth, etc) -\> create plots/stats tests
 
 ##Ethical Review
 
-
 # App Concept
+
 We anticipate making it so the user can use a single multiple choice select to chose their data of interest, but then a multiselect to chose their countries or regions of interest after a binary selection. Then we will allow them to check based on the variables in the dataset to choose which columns they would like to include.
 
 If only two countries are chosen, then we plan for the the actor to perform an unpaired t.test between countries, but if more than one country/region is selected, then an anova will be used for statistical test options.
 
 For plots, we plan to offer boxplots and scatterplots to represent the outcomes for our actors.
 
-
 ## Responsibilties
-Katie: 
-- Merging from pull requests during a fork-pull method
-- Data Prep
-Kat: 
-- 
+
+Katie:  
+- Merging from pull requests during a fork-pull method  
+- Data Prep   
+Kat:   
+-
 
 # Workflow
+
 We plan to communicate via texting for easy communication where both of us are most likely to see a message! We plan to use the fork and pull method, where Katie will be responsible for merging the files together. We plan to be available to assist the other in our plans, and use our initials during making branches to make sure we can reference our old work more readily just in case we want to name things or know when someone made a change and explain the use.
 
 # Planned Schedule:
-Data collected: Completed 3/30
-Project Plan: Completed 4/1
-Data Preparation: 4/3
-Graph Making Function: 4/8
-Stats Test Function: 4/10
-Shiny App - selecting dataset/variables: 4/15
-Shiny App - apply graph and stats function: 4/19
-Testing and Vignette: 4/21
+
+Data collected: Completed 3/30   
+Project Plan: Completed 4/1    
+Data Preparation: 4/3    
+Graph Making Function: 4/8   
+Stats Test Function: 4/10   
+Shiny App - selecting dataset/variables: 4/15   
+Shiny App - apply graph and stats function: 4/19   
+Testing and Vignette: 4/21   
 Submission Date: 4/22
