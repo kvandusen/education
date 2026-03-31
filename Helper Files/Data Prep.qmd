@@ -7,29 +7,123 @@ editor: visual
 ```{r}
 library(tidyverse)
 library(readxl)
+library(janitor)
 ```
 
+# Dataset on Net Attendance Rate
 ```{r}
 primary_net_attendance_rate <- read_xlsx("../Data/Adjusted_net_attendance_rate_2022_formatted.xlsx", sheet= "Primary", skip = 1) |>
   rename( "ISO" = `...1`,
          "Country" = `...2`,
-         "Sub-Region" = `...3`,
+         "SubRegion" = `...3`,
          "Development" = `...5`,
          "Total Completion" = `...6` 
-)
+) |> clean_names()
 LowerSecondary_net_attendance_rate <- read_xlsx("../Data/Adjusted_net_attendance_rate_2022_formatted.xlsx", sheet= "Lower secondary", skip = 1) |>
   rename( "ISO" = `...1`,
          "Country" = `...2`,
-         "Sub-Region" = `...3`,
+         "SubRegion" = `...3`,
          "Development" = `...5`,
          "Total Completion" = `...6` 
-)
+)|> clean_names()
 UpperSecondary_net_attendance_rate <- read_xlsx("../Data/Adjusted_net_attendance_rate_2022_formatted.xlsx", sheet= "Upper secondary", skip = 1) |>
   rename( "ISO" = `...1`,
          "Country" = `...2`,
-         "Sub-Region" = `...3`,
+         "SubRegion" = `...3`,
          "Development" = `...5`,
          "Total Completion" = `...6` 
+) |> clean_names()
+```
+
+
+# Dataset on Completion Rate
+```{r}
+primary_completion_rate <- read_xlsx("../Data/Completion_rate_2022_formatted.xlsx", sheet= "Primary", skip = 1) |>
+  rename( "ISO" = `...1`,
+         "Country" = `...2`,
+         "SubRegion" = `...3`,
+         "Development" = `...5`,
+         "Total Completion" = `...6` 
+) |> clean_names()
+LowerSecondary_completion_rate <- read_xlsx("../Data/Completion_rate_2022_formatted.xlsx", sheet= "Lower secondary", skip = 1) |>
+  rename( "ISO" = `...1`,
+         "Country" = `...2`,
+         "SubRegion" = `...3`,
+         "Development" = `...5`,
+         "Total Completion" = `...6` 
+) |> clean_names()
+UpperSecondary_completion_rate <- read_xlsx("../Data/Completion_rate_2022_formatted.xlsx", sheet= "Upper secondary", skip = 1) |>
+  rename( "ISO" = `...1`,
+         "Country" = `...2`,
+         "SubRegion" = `...3`,
+         "Development" = `...5`,
+         "Total Completion" = `...6` 
+) |> clean_names()
+```
+
+# Dataset on Foundational Learning
+```{r}
+combined_foundational_edu <- read_xlsx("../Data/Foundational-learning-2022-formatted.xlsx", , sheet= "Combined", skip = 1) |>
+  rename(
+          "Countries_Areas" = `...1`,
+         "Region" = `...2`,
+         "SubRegion" = `...3`,
+         "Development" = `...4`,
+         "Age_Group" = `...5`,
+         "Subject" = `...6`,
+         "Total" = `...7`
 )
 ```
 
+# Dataset ICT Skills
+```{r}
+total_ICT_Skills <- read_xlsx("../Data/ICT-Skills_2022.xlsx", , sheet= "Totals", skip = 1) |>
+  rename(
+         "Countries" = `...1`,
+         "ISO3" = `...2`,
+         "UNICEF_Region" = `...3`,
+         "Sex" = `...4`,
+)
+Area_ICT_Skills <- read_xlsx("../Data/ICT-Skills_2022.xlsx", , sheet= "Totals", skip = 1) |>
+  rename(
+         "Countries" = `...1`,
+         "ISO3" = `...2`,
+         "UNICEF_Region" = `...3`,
+         "Sex" = `...4`,
+         "Area" = `...5`
+)
+Wealth_ICT_Skills <- read_xlsx("../Data/ICT-Skills_2022.xlsx", , sheet= "Totals", skip = 1) |>
+  rename(
+         "Countries" = `...1`,
+         "ISO3" = `...2`,
+         "UNICEF_Region" = `...3`,
+         "Sex" = `...4`,
+         "Wealth" = `...5`
+)
+```
+
+# Dataset Literacy Skills
+```{r}
+youth_literacy <- read_xlsx("../Data/ICT-Skills_2022.xlsx", , sheet= "Youth literacy rate, aged 15-24", skip = 1) |>
+  rename(
+         "ISO3" = `...1`,
+         "Country/Area" = `...2`,
+         "Region" = `...3`,
+         "Subregion" = `...4`,
+         "Development" = `...5`,
+         "Total" = `...6`
+)
+adult_literacy <- read_xlsx("../Data/ICT-Skills_2022.xlsx", , sheet= "adult literacy rate, aged 15+", skip = 1) |>
+  rename(
+         "ISO3" = `...1`,
+         "Country/Area" = `...2`,
+         "Region" = `...3`,
+         "Subregion" = `...4`,
+         "Development" = `...5`,
+         "Total" = `...6`
+)
+```
+
+# Dataset on Out of Schools
+
+# Dataset on Digital Connectivity
