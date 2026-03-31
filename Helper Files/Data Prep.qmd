@@ -1,0 +1,35 @@
+---
+title: "Data Prep"
+format: html
+editor: visual
+---
+
+```{r}
+library(tidyverse)
+library(readxl)
+```
+
+```{r}
+primary_net_attendance_rate <- read_xlsx("../Data/Adjusted_net_attendance_rate_2022_formatted.xlsx", sheet= "Primary", skip = 1) |>
+  rename( "ISO" = `...1`,
+         "Country" = `...2`,
+         "Sub-Region" = `...3`,
+         "Development" = `...5`,
+         "Total Completion" = `...6` 
+)
+LowerSecondary_net_attendance_rate <- read_xlsx("../Data/Adjusted_net_attendance_rate_2022_formatted.xlsx", sheet= "Lower secondary", skip = 1) |>
+  rename( "ISO" = `...1`,
+         "Country" = `...2`,
+         "Sub-Region" = `...3`,
+         "Development" = `...5`,
+         "Total Completion" = `...6` 
+)
+UpperSecondary_net_attendance_rate <- read_xlsx("../Data/Adjusted_net_attendance_rate_2022_formatted.xlsx", sheet= "Upper secondary", skip = 1) |>
+  rename( "ISO" = `...1`,
+         "Country" = `...2`,
+         "Sub-Region" = `...3`,
+         "Development" = `...5`,
+         "Total Completion" = `...6` 
+)
+```
+
