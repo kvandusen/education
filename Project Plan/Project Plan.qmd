@@ -4,30 +4,19 @@ author: Katie Van Dusen, Katherine Mena
 format: html
 editor: visual
 ---
-
-<<<<<<< HEAD
-=======
-Element Pts Criteria Plan.1. Admin 0.5 App Title and the names and course of the group members Plan.2. Topic and Data 1.0 Context of the problem to be analyzed using the Shiny app Plan.2. Topic and Data 1.5 Status and key takeaways from the Literature Review (at least three sources) Plan.2. Topic and Data 1.5 Proposed data sources with links and general description of dates, number of variables, and number of observations for each source. Plan.3. Use Case 1.0 Use Case and Actor Description Plan.3. Use Case 1.0 Actor Questions of Interest Plan.3. Use Case 1.0 Anticipated Workflow for the Actor Plan.4. Ethical Review 2.0 Discuss ethics review across the life cycle and against a specific professional organization’s code of conduct/guidelines Plan.5. App Concept 1.5 General Layout of the App to support the Actor workflow Plan.5. App Concept 1.0 Planned options for user data selection and manipulation (if any) Plan.5. App Concept 2.0 Planned options for user exploratory numerical/graphical analysis Plan.5. App Concept 2.0 Planned options for user statistical models and tests Plan.6. Collaboration 1.0 Names and Responsibilities for the group members Plan.6. Collaboration 1.0 Approach to Team workflow: collaboration and branching Plan.6. Collaboration 1.0 Schedule: Dates for Major Phases and Milestones, e.g., Gathering of Data, Data Preparation, Milestones for developing the App, Code Cutoff, Producing the Vignette Plan.7. Readability 1.0 Appropriate formatting with minimal spelling/ grammar errors.
-
->>>>>>> 2102294e3b96964370d41a2ae3b2a0b12b81700f
-# App Title:
+# App Title: Global Education
 
 The project we propose it looking at the general global education statistics to see how globally education varies in both who participates, but also the skills which individuals have.
 
-## Lit REVIEW
-
-<<<<<<< HEAD
-#Proposed Data:\
+#Proposed Data:
 The data we propose to use come from [UNICEF](https://data.unicef.org/topic/education/overview/) which is made of 7 separate data sets: out of school rates, adjusted net attendance rates, completion rates, foundational learning skills, information communication technology skills, youth and adult literacy rates, and school age digital connectivity. Within these tables, we can compare by country, region of the world, developmental status, across various education levels, giving percentages of the key topic along with gender, population density as a factor, and by wealth distribution across each stage in education path (primary, secondary) with occasionally looking at pre-primary and adult outcomes. The data also represents a variety of years, which can be filtered to look at an individual country's change over time or how they compare at certain time points.
-=======
-#Proposed Data: The data we propose to use come from ![UNICEF](%22https://data.unicef.org/topic/education/overview/#data%22) which is made of 7 separate data sets: out of school rates, adjusted net attendance rates, completion rates, foundational learning skills, information communication technology skills, youth and adult literacy rates, and school age digital connectivity. Within these tables, we can compare by country, region of the world, developmental status, across various education levels, giving percentages of the key topic along with gender, population density as a factor, and by wealth distribution across each stage in education path (primary, secondary) with occasionally looking at pre-primary and adult outcomes. The data also represents a variety of years, which can be filtered to look at an individual country's change over time or how they compare at certain time points.
->>>>>>> 2102294e3b96964370d41a2ae3b2a0b12b81700f
 
 It appears that each sheet has \~100 countries listed, each with approximately \~15 variables, across 3 sheets in 7 excel files.
 
-#Actor Description: Individuals who have an interest in comparing the educational outcomes from different countries to determine where global humanitarian foundations should target their services to improve education for all people of the world.
-<<<<<<< HEAD
-=======
+#Actor Description:
+Individuals who have an interest in comparing the educational outcomes from different countries to determine where global humanitarian foundations should target their services to improve education for all people of the world.
+
+#Lit review
 
 Global education outcomes vary widely across countries, particularly in literacy, school participation, and access to foundational and digital skills. International datasets from organizations such as UNESCO show that these disparities are strongly associated with socioeconomic status (SES), gender, and national development levels. However, differences in outcomes are not driven by education systems alone; broader structural factors, including economic inequality, social policy, and demographic composition, play a central role. This literature review examines cross-national research on education, focusing on how SES, linguistic diversity, and access to resources shape unequal learning outcomes, and provides a foundation for analyzing global education data in this project.
 
@@ -44,7 +33,6 @@ Bradbury, B., Corak, M., Waldfogel, J., & Washbrook, E. (2015). *Too many childr
 Lindberg, M., & Silvennoinen, H. (2018). Assessing the basic skills of the highly educated in 21 OECD countries: an international benchmark study of graduates’ proficiency in literacy and numeracy using the PIAAC 2012 data. *Comparative Education*, *54*(3), 325–351. https://doi.org/10.1080/03050068.2017.1403676
 
 Fraillon, J., Ainley, J., Schulz, W., Friedman, T., & Duckworth, D. (2019). *Preparing for life in a digital world: International Computer and Information Literacy Study 2018 international report*. [International Association for the Evaluation of Educational Achievement]{.underline}.
->>>>>>> 2102294e3b96964370d41a2ae3b2a0b12b81700f
 
 # Actor Questions of Interest:
 
@@ -57,7 +45,9 @@ Fraillon, J., Ainley, J., Schulz, W., Friedman, T., & Duckworth, D. (2019). *Pre
 
 Dataset of interest (select) -\> select countries or global regions -\> stop and use that level variables or select sub variables (gender, region, wealth, etc) -\> create plots/stats tests
 
-##Ethical Review
+#Ethical Review
+[NCES Data Ethics](https://nces.ed.gov/pubs2010/dataethics/ethics.asp) is a US based center for education statistics, on outlines their data ethics clearly to ensure that the data collected to protected to only sources disclosed and consented by the parties, protecting the privacy of the individuals, this is an important aspect to the storage part of getting data. They highlight across many points how important the security of the data is important, which makes sense as a majority of their datasets have FERPA-like information and concern minors. They also highlight that statistics are only a snapshot to an individual, not something to make judgements about the whole person about - as during the spreading of analysis outcomes or creation of comparisons, people could be reduced down to groups that could illicit negative or positive attitudes some people unjustly or make people thing to deploy certain recommendations.
+
 
 # App Concept
 
@@ -67,17 +57,17 @@ If only two countries are chosen, then we plan for the the actor to perform an u
 
 For plots, we plan to offer boxplots and scatterplots to represent the outcomes for our actors.
 
-## Responsibilties
 
-<<<<<<< HEAD
 Katie:\
 - Merging from pull requests during a fork-pull method\
 - Data Prep\
+- Function for data stats\
+- Implementing created function into app\
 Kat:\
--
-=======
-Katie: - Merging from pull requests during a fork-pull method - Data Prep Kat: -
->>>>>>> 2102294e3b96964370d41a2ae3b2a0b12b81700f
+- Function for graphs\
+- Implementing created function into app\
+
+
 
 # Workflow
 
@@ -85,16 +75,12 @@ We plan to communicate via texting for easy communication where both of us are m
 
 # Planned Schedule:
 
-<<<<<<< HEAD
 Data collected: Completed 3/30\
-Project Plan: Completed 4/1\
-Data Preparation: 4/3\
+Project Plan: Completed 4/3\
+Data Preparation: Completed 4/3\
 Graph Making Function: 4/8\
 Stats Test Function: 4/10\
 Shiny App - selecting dataset/variables: 4/15\
 Shiny App - apply graph and stats function: 4/19\
 Testing and Vignette: 4/21\
 Submission Date: 4/22
-=======
-Data collected: Completed 3/30 Project Plan: Completed 4/1 Data Preparation: 4/3 Graph Making Function: 4/8 Stats Test Function: 4/10 Shiny App - selecting dataset/variables: 4/15 Shiny App - apply graph and stats function: 4/19 Testing and Vignette: 4/21 Submission Date: 4/22
->>>>>>> 2102294e3b96964370d41a2ae3b2a0b12b81700f
