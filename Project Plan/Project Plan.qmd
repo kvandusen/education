@@ -5,18 +5,46 @@ format: html
 editor: visual
 ---
 
+<<<<<<< HEAD
+=======
+Element Pts Criteria Plan.1. Admin 0.5 App Title and the names and course of the group members Plan.2. Topic and Data 1.0 Context of the problem to be analyzed using the Shiny app Plan.2. Topic and Data 1.5 Status and key takeaways from the Literature Review (at least three sources) Plan.2. Topic and Data 1.5 Proposed data sources with links and general description of dates, number of variables, and number of observations for each source. Plan.3. Use Case 1.0 Use Case and Actor Description Plan.3. Use Case 1.0 Actor Questions of Interest Plan.3. Use Case 1.0 Anticipated Workflow for the Actor Plan.4. Ethical Review 2.0 Discuss ethics review across the life cycle and against a specific professional organization’s code of conduct/guidelines Plan.5. App Concept 1.5 General Layout of the App to support the Actor workflow Plan.5. App Concept 1.0 Planned options for user data selection and manipulation (if any) Plan.5. App Concept 2.0 Planned options for user exploratory numerical/graphical analysis Plan.5. App Concept 2.0 Planned options for user statistical models and tests Plan.6. Collaboration 1.0 Names and Responsibilities for the group members Plan.6. Collaboration 1.0 Approach to Team workflow: collaboration and branching Plan.6. Collaboration 1.0 Schedule: Dates for Major Phases and Milestones, e.g., Gathering of Data, Data Preparation, Milestones for developing the App, Code Cutoff, Producing the Vignette Plan.7. Readability 1.0 Appropriate formatting with minimal spelling/ grammar errors.
+
+>>>>>>> 2102294e3b96964370d41a2ae3b2a0b12b81700f
 # App Title:
 
 The project we propose it looking at the general global education statistics to see how globally education varies in both who participates, but also the skills which individuals have.
 
 ## Lit REVIEW
 
+<<<<<<< HEAD
 #Proposed Data:\
 The data we propose to use come from [UNICEF](https://data.unicef.org/topic/education/overview/) which is made of 7 separate data sets: out of school rates, adjusted net attendance rates, completion rates, foundational learning skills, information communication technology skills, youth and adult literacy rates, and school age digital connectivity. Within these tables, we can compare by country, region of the world, developmental status, across various education levels, giving percentages of the key topic along with gender, population density as a factor, and by wealth distribution across each stage in education path (primary, secondary) with occasionally looking at pre-primary and adult outcomes. The data also represents a variety of years, which can be filtered to look at an individual country's change over time or how they compare at certain time points.
+=======
+#Proposed Data: The data we propose to use come from ![UNICEF](%22https://data.unicef.org/topic/education/overview/#data%22) which is made of 7 separate data sets: out of school rates, adjusted net attendance rates, completion rates, foundational learning skills, information communication technology skills, youth and adult literacy rates, and school age digital connectivity. Within these tables, we can compare by country, region of the world, developmental status, across various education levels, giving percentages of the key topic along with gender, population density as a factor, and by wealth distribution across each stage in education path (primary, secondary) with occasionally looking at pre-primary and adult outcomes. The data also represents a variety of years, which can be filtered to look at an individual country's change over time or how they compare at certain time points.
+>>>>>>> 2102294e3b96964370d41a2ae3b2a0b12b81700f
 
 It appears that each sheet has \~100 countries listed, each with approximately \~15 variables, across 3 sheets in 7 excel files.
 
 #Actor Description: Individuals who have an interest in comparing the educational outcomes from different countries to determine where global humanitarian foundations should target their services to improve education for all people of the world.
+<<<<<<< HEAD
+=======
+
+Global education outcomes vary widely across countries, particularly in literacy, school participation, and access to foundational and digital skills. International datasets from organizations such as UNESCO show that these disparities are strongly associated with socioeconomic status (SES), gender, and national development levels. However, differences in outcomes are not driven by education systems alone; broader structural factors, including economic inequality, social policy, and demographic composition, play a central role. This literature review examines cross-national research on education, focusing on how SES, linguistic diversity, and access to resources shape unequal learning outcomes, and provides a foundation for analyzing global education data in this project.
+
+Research comparing educational outcomes in the United States and Canada provides important insight into how structural factors shape literacy development. Despite similarities in language and schooling systems, significant differences exist in the magnitude of inequality between the two countries. Specifically, socioeconomic status (SES) has a stronger effect on early language skills and reading achievement in the United States than in Canada, where more robust social supports help mitigate the effects of poverty (Bradbury et al., 2015). The study also highlights how differences in immigration policy and approaches to multilingualism influence outcomes for language-minority learners, with Canada’s policies generally associated with more favorable conditions. Importantly, the authors argue that disparities in reading are not simply the result of individual ability, but rather reflect broader systems of inequality that affect access to resources and learning opportunities (Bradbury et al., 2015).These findings are directly relevant to global education data, as they suggest that cross-country differences in literacy rates and foundational skills, such as those examined in this project, may be driven by structural and socioeconomic conditions rather than education systems alone.
+
+Further evidence from the OECD Programme for the International Assessment of Adult Competencies reinforces the importance of these structural influences by examining literacy and numeracy skills among highly educated adults across 21 countries. The study finds substantial variation in graduates’ basic skills, with some countries producing significantly more proficient individuals than others, despite similar levels of higher education attainment. Notably, a considerable proportion of graduates in certain countries do not reach expected proficiency levels, suggesting that obtaining a degree does not guarantee strong foundational skills (Lindberg and Silvennoinen 2018). The findings also show that countries with higher proportions of university graduates do not necessarily achieve higher overall skill levels, indicating that expanding access to higher education alone is insufficient. Instead, graduate skill levels tend to reflect the strength of the broader education system and earlier educational experiences (Lindberg and Silvennoinen 2018). These insights are highly relevant to this project, as they support the idea that differences observed in global education data are shaped by systemic and socioeconomic factors rather than participation rates alone.
+
+Digital skills have also become an increasingly important dimension of global education, complementing traditional measures such as literacy and numeracy. The International Computer and Information Literacy Study (ICILS) demonstrates that students’ ability to use technology for information gathering, communication, and content creation varies significantly across countries (Fraillon et al., 2019). Importantly, the study finds that differences within countries are often larger than differences between countries, highlighting the role of inequality in shaping educational outcomes. Students’ socioeconomic background, as well as their access to and familiarity with technology, are strongly associated with higher levels of digital literacy (Fraillon et al., 2019).Additionally, countries with more advanced technological infrastructure tend to have higher overall student performance in digital skills. These findings are highly relevant to global education data, as they suggest that disparities in ICT skills and digital connectivity, key variables in this project, are closely linked to broader structural inequalities rather than purely educational factors (Fraillon et al., 2019).
+
+Overall, the literature consistently demonstrates that global differences in literacy, foundational skills, and digital competencies are deeply influenced by structural and socioeconomic conditions. Across studies, inequality within and between countries emerges as a key driver of educational outcomes, shaping access to resources, learning opportunities, and skill development. Together, these findings provide a strong foundation for this research project, supporting the analysis of global education data through a lens that prioritizes structural factors rather than attributing differences solely to education systems.
+
+Bradbury, B., Corak, M., Waldfogel, J., & Washbrook, E. (2015). *Too many children left behind: The U.S. achievement gap in comparative perspective*. [Russell Sage Foundation]{.underline}.
+
+Lindberg, M., & Silvennoinen, H. (2018). Assessing the basic skills of the highly educated in 21 OECD countries: an international benchmark study of graduates’ proficiency in literacy and numeracy using the PIAAC 2012 data. *Comparative Education*, *54*(3), 325–351. https://doi.org/10.1080/03050068.2017.1403676
+
+Fraillon, J., Ainley, J., Schulz, W., Friedman, T., & Duckworth, D. (2019). *Preparing for life in a digital world: International Computer and Information Literacy Study 2018 international report*. [International Association for the Evaluation of Educational Achievement]{.underline}.
+>>>>>>> 2102294e3b96964370d41a2ae3b2a0b12b81700f
 
 # Actor Questions of Interest:
 
@@ -41,11 +69,15 @@ For plots, we plan to offer boxplots and scatterplots to represent the outcomes 
 
 ## Responsibilties
 
+<<<<<<< HEAD
 Katie:\
 - Merging from pull requests during a fork-pull method\
 - Data Prep\
 Kat:\
 -
+=======
+Katie: - Merging from pull requests during a fork-pull method - Data Prep Kat: -
+>>>>>>> 2102294e3b96964370d41a2ae3b2a0b12b81700f
 
 # Workflow
 
@@ -53,6 +85,7 @@ We plan to communicate via texting for easy communication where both of us are m
 
 # Planned Schedule:
 
+<<<<<<< HEAD
 Data collected: Completed 3/30\
 Project Plan: Completed 4/1\
 Data Preparation: 4/3\
@@ -62,3 +95,6 @@ Shiny App - selecting dataset/variables: 4/15\
 Shiny App - apply graph and stats function: 4/19\
 Testing and Vignette: 4/21\
 Submission Date: 4/22
+=======
+Data collected: Completed 3/30 Project Plan: Completed 4/1 Data Preparation: 4/3 Graph Making Function: 4/8 Stats Test Function: 4/10 Shiny App - selecting dataset/variables: 4/15 Shiny App - apply graph and stats function: 4/19 Testing and Vignette: 4/21 Submission Date: 4/22
+>>>>>>> 2102294e3b96964370d41a2ae3b2a0b12b81700f
