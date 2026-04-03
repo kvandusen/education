@@ -11,7 +11,8 @@ The project we propose it looking at the general global education statistics to 
 
 ## Lit REVIEW
 
-#Proposed Data: The data we propose to use come from ![UNICEF](%22https://data.unicef.org/topic/education/overview/#data%22) which is made of 7 separate data sets: out of school rates, adjusted net attendance rates, completion rates, foundational learning skills, information communication technology skills, youth and adult literacy rates, and school age digital connectivity. Within these tables, we can compare by country, region of the world, developmental status, across various education levels, giving percentages of the key topic along with gender, population density as a factor, and by wealth distribution across each stage in education path (primary, secondary) with occasionally looking at pre-primary and adult outcomes. The data also represents a variety of years, which can be filtered to look at an individual country's change over time or how they compare at certain time points.
+#Proposed Data:\
+The data we propose to use come from [UNICEF](https://data.unicef.org/topic/education/overview/) which is made of 7 separate data sets: out of school rates, adjusted net attendance rates, completion rates, foundational learning skills, information communication technology skills, youth and adult literacy rates, and school age digital connectivity. Within these tables, we can compare by country, region of the world, developmental status, across various education levels, giving percentages of the key topic along with gender, population density as a factor, and by wealth distribution across each stage in education path (primary, secondary) with occasionally looking at pre-primary and adult outcomes. The data also represents a variety of years, which can be filtered to look at an individual country's change over time or how they compare at certain time points.
 
 It appears that each sheet has \~100 countries listed, each with approximately \~15 variables, across 3 sheets in 7 excel files.
 
@@ -40,10 +41,10 @@ For plots, we plan to offer boxplots and scatterplots to represent the outcomes 
 
 ## Responsibilties
 
-Katie:  
-- Merging from pull requests during a fork-pull method  
-- Data Prep   
-Kat:   
+Katie:\
+- Merging from pull requests during a fork-pull method\
+- Data Prep\
+Kat:\
 -
 
 # Workflow
@@ -52,12 +53,12 @@ We plan to communicate via texting for easy communication where both of us are m
 
 # Planned Schedule:
 
-Data collected: Completed 3/30   
-Project Plan: Completed 4/1    
-Data Preparation: 4/3    
-Graph Making Function: 4/8   
-Stats Test Function: 4/10   
-Shiny App - selecting dataset/variables: 4/15   
-Shiny App - apply graph and stats function: 4/19   
-Testing and Vignette: 4/21   
+Data collected: Completed 3/30\
+Project Plan: Completed 4/1\
+Data Preparation: 4/3\
+Graph Making Function: 4/8\
+Stats Test Function: 4/10\
+Shiny App - selecting dataset/variables: 4/15\
+Shiny App - apply graph and stats function: 4/19\
+Testing and Vignette: 4/21\
 Submission Date: 4/22

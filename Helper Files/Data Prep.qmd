@@ -13,6 +13,7 @@ library(janitor)
 ```
 
 # Dataset on Net Attendance Rate
+
 ```{r}
 primary_net_attendance_rate <- read_xlsx("../Data/Adjusted_net_attendance_rate_2022_formatted.xlsx", sheet= "Primary", skip = 1) |>
   rename( "ISO" = `...1`,
@@ -50,8 +51,8 @@ UpperSecondary_net_attendance_rate <- read_xlsx("../Data/Adjusted_net_attendance
 rbind(primary_net_attendance_rate,LowerSecondary_net_attendance_rate, UpperSecondary_net_attendance_rate) |> arrange(desc(country)) |> relocate(level, .after = unicef_sub_region_1 ) -> all_attendance
 ```
 
-
 # Dataset on Completion Rate
+
 ```{r}
 primary_completion_rate <- read_xlsx("../Data/Completion_rate_2022_formatted.xlsx", sheet= "Primary", skip = 1) |>
   rename( "ISO" = `...1`,
@@ -92,6 +93,7 @@ rbind(primary_completion_rate,LowerSecondary_completion_rate, UpperSecondary_com
 ```
 
 # Dataset on Foundational Learning
+
 ```{r}
 combined_foundational_edu <- read_xlsx("../Data/Foundational-learning-2022-formatted.xlsx", sheet= "Combined", skip = 1) |>
   rename(
@@ -106,6 +108,7 @@ combined_foundational_edu <- read_xlsx("../Data/Foundational-learning-2022-forma
 ```
 
 # Dataset ICT Skills
+
 ```{r}
 total_ICT_Skills <- read_xlsx("../Data/ICT-Skills_2022.xlsx", sheet= "Totals", skip = 1) |>
   rename(
@@ -133,6 +136,7 @@ Wealth_ICT_Skills <- read_xlsx("../Data/ICT-Skills_2022.xlsx", sheet= "Wealth", 
 ```
 
 # Dataset Literacy Skills
+
 ```{r}
 youth_literacy <- read_xlsx("../Data/Literacy-rate_2021-1.xlsx", sheet= "Youth literacy rate, aged 15-24", skip = 1) |>
   rename(
@@ -164,6 +168,7 @@ rbind(adult_literacy,youth_literacy) |>
 ```
 
 # Dataset on Out of Schools
+
 ```{r}
 primary_OutSchool_rate <- read_xlsx("../Data/Out_of_school_rate_2022_formatted.xlsx", sheet= "Primary", skip = 1) |>
   rename( "ISO" = `...1`,
@@ -204,6 +209,7 @@ rbind(primary_OutSchool_rate,LowerSecondary_OutSchool_rate,UpperSecondary_OutSch
 ```
 
 # Dataset on Digital Connectivity
+
 ```{r}
 total_schoolage_digital_connect <-read_xlsx("../Data/School-Age-Digital-Connectivity.xlsx", sheet= "Total school age", skip = 1) |>
   rename( "ISO" = `...1`,
@@ -259,4 +265,3 @@ rbind(total_schoolage_digital_connect,pre_primary_digital_connect,primary_digita
   arrange(desc(country)) |>
   relocate(level, .after = unicef_sub_region_1 ) -> all_DigitalConnectivity
 ```
-
